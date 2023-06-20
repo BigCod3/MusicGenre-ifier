@@ -1,7 +1,7 @@
 import os
 
 # Set the path to your music folder
-music_folder = "<CHANGE ME>"
+folder_path = "<CHANGE ME>"
 
 # Set the minimum number of songs for a playlist to be kept
 min_songs = 10  # Change this to your preference
@@ -10,11 +10,11 @@ min_songs = 10  # Change this to your preference
 to_delete = []
 
 # Iterate through the files in the music folder
-for filename in os.listdir(music_folder):
+for filename in os.listdir(folder_path):
     # Check if the file is an M3U playlist
     if filename.endswith(".m3u"):
         # Create the full file path
-        file_path = os.path.join(music_folder, filename)
+        file_path = os.path.join(folder_path, filename)
 
         try:
             # Open the playlist file
