@@ -33,6 +33,7 @@ c=1
 try:
     with open('music_dict.json', 'r') as f:
         music_dict = json.load(f)
+    print("Previous music data loaded successfully.")
 except:
     print('No previous music data found.')
 
