@@ -1,5 +1,5 @@
 # MusicGenre-ifier
-Small program I made with the help of chatGPT to create genre specific playlists(m3u files) to use when DJing. Pretty slow and not perfect but gets the job done.
+Small program I made with the help of chatGPT to create genre specific playlists(m3u files) from local files to use when DJing. Pretty slow and not perfect but gets the job done.
 
 I would ensure the software you plan to use the playlists in can support m3u files, if not, you can modify the file extension within the code itself here: 
 
