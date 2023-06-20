@@ -40,6 +40,7 @@ I have tested this on my own system a couple times but **PLEASE** backup your fi
 # Finally
 Once the both programs are run successfully you should have your playlist files!
 Depending on your DJ Software the playlists may appear in different ways. I use Traktor Pro 3 and this is how I see my playlists: 
+
 ![image](https://github.com/BigCod3/MusicGenre-ifier/assets/101913888/e3458b73-9b57-404e-98a2-e453ee3ea862)
 
 
