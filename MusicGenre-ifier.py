@@ -58,13 +58,18 @@ try:
             text_box = driver.find_element(By.ID, 'search-word')  # Replace 'textbox-id' with the actual ID of the text box element
             # Enter the file name into the text box
             text_box.send_keys(file_name)
+            # Waiting for results
             time.sleep(4)
             first_song_check = wait.until(EC.text_to_be_present_in_element_attribute((By.XPATH, '//*[@id="hh1"]'),"data-id", "1"))
+            # Clicking on first song in results
             first_song = driver.find_element(By.XPATH, '//*[@id="hh1"]')
             first_song.click()
+            # Waiting for info from first result
             time.sleep(3)
+            # Gathering all spotify tags from result and putting them in a list
             tags = driver.find_elements(By.XPATH, '//*[@id="spotify-tags"]/div/div[2]/a')
             genres = [genre.text for genre in tags]
+            # Assigning the song name to the genres that were found and putting that in a dictionary
             music_dict[file_name] = genres
             print(f"Finished song #{c} - {file_name}")
             c+=1
