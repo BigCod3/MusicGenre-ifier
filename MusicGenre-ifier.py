@@ -28,6 +28,8 @@ music_list = []
 music_dict = {}
 genre_dict = {}
 c=1
+
+# Check to see if we have previous progress from a crash
 try:
     with open('music_dict.json', 'r') as f:
         music_dict = json.load(f)
